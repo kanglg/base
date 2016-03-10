@@ -1,0 +1,9 @@
+node_modules
+dist
+target
+.tmp
+.sass-cache
+.idea
+src/main/webapp/bower_components
+test/bower_components
+base.iml
