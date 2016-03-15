@@ -73,6 +73,19 @@
       <scope>test</scope>
     </dependency>
 
+    <!--shiro 安全控件-->
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-ehcache</artifactId>
+      <version>1.2.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-spring</artifactId>
+      <version>1.2.4</version>
+    </dependency>
+
     <!-- mybatis 包 -->
     <dependency>
       <groupId>org.mybatis</groupId>
@@ -112,6 +125,13 @@
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
       <version>1.2.17</version>
+    </dependency>
+
+    <!--slf4j-->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.19</version>
     </dependency>
 
     <!-- servlet -->
@@ -230,14 +250,6 @@
         <groupId>org.mybatis.generator</groupId>
         <artifactId>mybatis-generator-maven-plugin</artifactId>
         <version>1.3.2</version>
-        <executions>
-          <execution>
-            <id>Generate MyBatis Artifacts</id>
-            <goals>
-              <goal>generate</goal>
-            </goals>
-          </execution>
-        </executions>
         <configuration>
           <verbose>true</verbose>
           <overwrite>true</overwrite>
@@ -249,6 +261,11 @@
             <artifactId>mybatis-generator-core</artifactId>
             <version>1.3.2</version>
           </dependency>
+          <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.35</version>
+          </dependency>
         </dependencies>
       </plugin>
 
@@ -258,7 +275,7 @@
         <version>9.2.0.v20140526</version>
         <configuration>
           <httpConnector>
-            <port>8081</port>
+            <port>8080</port>
           </httpConnector>
           <scanIntervalSeconds>10</scanIntervalSeconds>
           <stopKey>foo</stopKey>
