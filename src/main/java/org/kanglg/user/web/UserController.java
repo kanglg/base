@@ -17,7 +17,7 @@ public class UserController {
   private UserService userService;
   @RequestMapping(method = RequestMethod.GET)
   public String index() {
-    User user = userService.getUserById("1");
+//    User user = userService.getUserById("1");
     return "/user/user-index";
   }
 }

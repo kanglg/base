@@ -63,7 +63,7 @@ Purchase: http://wrapbootstrap.com
       </div>
     </div>
   </div>
-  <input type="hidden"c name="${_csrf.parameterName}" value="${_csrf.token}"/>
+  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 </form>
 <!--Basic Scripts-->
 <script src="${ctx}/assets/js/jquery-2.0.3.min.js"></script>
